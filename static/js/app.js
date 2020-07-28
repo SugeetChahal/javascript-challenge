@@ -47,7 +47,6 @@ d3.event.preventDefault();
 
  // Extract the given input for all the fields on the web page
  var Datevalue = inputDate.property("value")
- var Cityvalue = inputCity.property("value")
  var Statevalue = inputState.property("value")
  var Countryvalue = inputCountry.property("value")
  var Shapevalue = inputShape.property("value")
