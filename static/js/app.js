@@ -47,17 +47,10 @@ d3.event.preventDefault();
 
  // Extract the given input for all the fields on the web page
  var Datevalue = inputDate.property("value")
- var Statevalue = inputState.property("value")
- var Countryvalue = inputCountry.property("value")
- var Shapevalue = inputShape.property("value")
 
  // Apply the conditions for filtering the data and assign it to a variable
  var filteredData = tableData.filter(function(recorded){
-    return ((recorded.datetime === Datevalue ||Datevalue == "" ) &&
-             (recorded.city === Cityvalue ||Cityvalue == "") &&
-             (recorded.state === Statevalue ||Statevalue == "")&&
-             (recorded.country === Countryvalue ||Countryvalue == "")&&
-             (recorded.shape === Shapevalue ||Shapevalue== "")
+    return ((recorded.datetime === Datevalue ||Datevalue == "" )
          )
  })
 
